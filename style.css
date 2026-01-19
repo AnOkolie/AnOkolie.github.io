@@ -142,7 +142,7 @@ span {
 }
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
   padding: 1rem 2.8rem;
   background: var(--main-color);
   border-radius: 4rem;
@@ -312,8 +312,76 @@ span {
   color: var(--second-bg-color);
 }
 
+.portfolio-layer a i {
+  font-size: 2rem;
+  color: var(--second-bg-color);
+}
+
 .contact h2 {
   margin-bottom: 3rem;
+}
+
+.menu-icon i {
+  font-size: 2.4rem;
+  color: var(--main-color);
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+}
+
+.dropdown-content a {
+  display: block;
+  color: white;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+/* Show modal when targeted */
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Modal box */
+.modal-content {
+  background: #111;
+  color: #fff;
+  padding: 2rem;
+  width: min(600px, 90%);
+  border-radius: 12px;
+  position: relative;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.alert {
+  position: fixed;
+  display: none;
+}
+
+.menu-icon:hover .dropdown-content {
+  display: block;
+  cursor: pointer;
 }
 
 .contact form {

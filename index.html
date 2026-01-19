@@ -1,170 +1,315 @@
 import 'boxicons'
 
-<!DOCTYPE html>
-<html lang = "en">
-    
-<head>
-    <meta charset = "UTF-8">
-    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
-    <meta name= "viewport" content = "width = device-width, initial-scale = 0.1">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width = device-width, initial-scale = 0.1" />
     <title>Portfolio website</title>
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <link rel = "stylesheet" href = "style.css">
-    
-</head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">My Portfolio</a>
+      <div class="menu-icon">
+        <i class="bx bx-menu" id="menu-icon" on></i>
+        <div class="dropdown-content">
+          <a href="#home" class="active">Home</a>
+          <a href="#about"> About</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+          <a
+            download="Anthony_Okolie_Resume.pdf"
+            href="/Resume/Anthony_Okolie_Resume.pdf"
+          >
+            Resume</a
+          >
+        </div>
+      </div>
 
-<body>
-    <header class = "header">
-        <a href = "#" class = "logo">My Portfolio</a>
-
-        <i class = 'bx bx-menu' id="menu-icon"></i>
-
-        <nav class = "navbar">
-            <a href = "#home" class = "active">Home</a>
-            <a href = "#about"> About</a>
-            <a href = "#services">Services</a>
-            <a href = "#portfolio">Portfolio</a>
-            <a href = "#contact">Contact</a>
-        </nav>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about"> About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="alert">
+        <span
+          class="closebtn"
+          onclick="this.parentElement.style.display = 'none'"
+        >
+          &times;
+        </span>
+        This is an alert box.
+      </div>
+      ;
     </header>
 
     <!-- home Section -->
-    <section class = "home" id = "home">
-        <div class = "home-content">
-            <h3>Hi, it's me</h3>
-            <h1>Okolie Anthony</h1>
-            <h3>And I'm a <span class = "multiple-text"></span></h3>
-                <div class = "social-media">
-                    <a href ="https://www.linkedin.com/in/anthony-okolie-78b77926a/"><i class='bx bxl-linkedin'></i></a>
-                    <a href ="https://github.com/AnOkolie"><i class='bx bxl-github'></i></a>
-                </div>
-                <a href = "Resume/Anthony_Okolie_Resume.pdf" class = "btn" download="resume.pdf">Download Resume</a>
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hi, it's me</h3>
+        <h1>Okolie Anthony</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <p class="hero-subtext">
+          I build full-stack web applications using React, Node.js, and MongoDB.
+        </p>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/anthony-okolie-78b77926a/"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/AnOkolie"
+            ><i class="bx bxl-github"></i
+          ></a>
         </div>
+        <a
+          href="Resume/Anthony_Okolie_Resume.pdf"
+          class="btn"
+          download="resume.pdf"
+          >Download Resume</a
+        >
+      </div>
 
-        <div class = "home-img">
-            <img src = "images/portrait.jpeg" alt = "self portrait">
-        </div>
-       
+      <div class="home-img">
+        <img src="images/portrait.jpeg" alt="self portrait" />
+      </div>
     </section>
 
     <!--custom js-->
 
     <!--about section-->
-    <section class ="about"  id ="about">
-        <div class = "about-img">
-            <img src = "images/portrait.jpeg" alt = "self portrait">
-        </div>
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/portrait.jpeg" alt="self portrait" />
+      </div>
 
-        <div class="about-content">
-            <h2 class = "heading">About <span>Me</span></h2>
-            <h3>Backend developer</h3>
-            <a href="#portfolio" class = "btn">Read more</a>
-        </div>  
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Backend developer</h3>
+        <p>
+          I’m a Computer Science student with a strong interest in building
+          scalable web applications. I focus on backend development using
+          Node.js, Express, MongoDB, and REST APIs, while also building modern
+          frontends with React.
+        </p>
+        <p>
+          I enjoy turning ideas into real-world applications and continuously
+          improving my system design and architecture skills.
+        </p>
+      </div>
     </section>
 
-
-    <section class = "services" id ="services">
-        <h2 class = "heading">Our <span>Services</span></h2>
-        <div class ="services-container" style="padding: 20px;">
-            <div class="services-box">
-                <i class='bx bx-code-alt'></i>
-                <h3>Web Development</h3>
-                <div style="padding: 10px;">
-                    <a href="#web-dev" class = "btn">READ MORE</a>
-                </div>
-            </div>
-
-            <div class="services-box">
-                <i class='bx bxl-java'></i>
-                <h3>Backend Development</h3>
-                <div style="padding: 10px;">
-                    <a href="#backend-dev" class = "btn">READ MORE</a>
-                </div>
-            </div>
-            <div class="services-box">
-                <i class='bx bxl-react'></i>
-                <h3>Frontend Development</h3>
-                <div style="padding: 10px;">
-                    <a href="#frontend-dev" class = "btn">READ MORE</a>
-                </div>
-            </div>
+    <section class="services" id="services">
+      <h2 class="heading">What <span>I Do</span></h2>
+      <div class="services-container" style="padding: 20px">
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Web Development</h3>
+          <div style="padding: 10px">
+            <a href="#portfolio" class="btn">READ MORE</a>
+          </div>
         </div>
+
+        <div class="services-box">
+          <i class="bx bxl-java"></i>
+          <h3>Backend Development</h3>
+          <div style="padding: 10px">
+            <a href="#portfolio" class="btn">READ MORE</a>
+          </div>
+        </div>
+        <div class="services-box">
+          <i class="bx bxl-react"></i>
+          <h3>Frontend Development</h3>
+          <div style="padding: 10px">
+            <a href="#portfolio" class="btn">READ MORE</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--portfolio-->
 
-    <section class ="portfolio" id = "portfolio">
-        <h2 class ="heading">Latest <span>Project</span></h2>
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Project</span></h2>
 
-        <div class="portfolio-container">
-            <div class="portfolio-box" id="web-dev">
-                <img src = "images/Portfolio.jpeg" alt = "">
-                <div class ="portfolio-layer" >
-                    <h4>Web design</h4>
-                    <p>Over the summer i looked to improve my skills on web design, 
-                        and i started working on projects in react. Making a online clock with calendar capabilities</p>
-                    <a href="#"><i class='bx bx-link-eternal'></i></a>
-                </div>
+      <div class="portfolio-container">
+        <div class="portfolio-box" id="web-dev">
+          <img src="images/Portfolio.jpeg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Expense Tracker App</h4>
+            <p>
+              A full-stack application that allows users to track expenses with
+              authentication and protected routes.
+            </p>
+            <a href="#expense-modal" class="btn">View details</a>
+          </div>
+          <div id="expense-modal" class="modal">
+            <div class="modal-content">
+              <a href="#portfolio" class="close">&times;</a>
+
+              <h2>Real-Time Chat Application</h2>
+
+              <p>
+                
+              </p>
+
+              <h4>Key Highlights</h4>
+              <ul>
+                <li>Gamified habit tracking with badges and streaks</li>
+                <li>Social features for shared progress and study meetups</li>
+                <li>Agile development across multiple sprints</li>
+                <li>Frontend-focused contribution in a collaborative team environment</li>
+                <li>Dockerized frontend and backend services</li>
+              </ul>
+
+              <div class="modal-links">
+                <a href="https://github.com/AnOkolie/expense-tracker">
+              Github
+            </a>
+                <a href="https://your-live-demo.com">
+              Live Demo
+            </a>
+            <hr />
+              </div>
             </div>
-            <div class="portfolio-box" id="backend-dev">
-                <img src = "images/Portfolio.jpeg" alt = "">
-                <div class ="portfolio-layer" >
-                    <h4>Backend Developer</h4>
-                    <p>Over the course of my university career, i have studied many languages to develop my programming abilities.
-                        I am proficient in Java and C</p>
-                    <a href="#"><i class='bx bx-link-eternal'></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box" id="frontend-dev">
-                <img src = "images/Portfolio.jpeg" alt = "">
-                <div class ="portfolio-layer" >
-                    <h4>Frontend Developer</h4>
-                    <p>Over the course of my umniversity career, i have studied many languages to develop my programming abilities.
-                        I am proficient in Java and C</p>
-                    <a href="#"><i class='bx bx-link-eternal'></i></a>
-                </div>
             </div>
         </div>
 
+        <!-- CHAT APP PROJECT -->
+        <div class="portfolio-box" id="backend-dev">
+          <img src="images/Portfolio.jpeg" alt="" />
+          <!-- Project Card -->
+          <div class="portfolio-layer">
+            <h4>Real-Time Chat App</h4>
+            <p>Socket.IO powered real-time messaging</p>
+            <a href="#chat-modal" class="btn">View Details</a>
+          </div>
 
+          <!-- Modal -->
+          <div id="chat-modal" class="modal">
+            <div class="modal-content">
+              <a href="#portfolio" class="close">&times;</a>
 
+              <h2>Real-Time Chat Application</h2>
+
+              <p>
+                A full-stack real-time chat app built with React, Node.js, and
+                Socket.IO, supporting authentication, media uploads, and live
+                presence tracking.
+              </p>
+
+              <h4>Key Features</h4>
+              <ul>
+                <li>JWT authentication</li>
+                <li>Real-time messaging with Socket.IO</li>
+                <li>Online/offline presence</li>
+                <li>Image uploads via Cloudinary</li>
+              </ul>
+
+              <div class="modal-links">
+                <a href="https://github.com/AnOkolie/chat-app" target="_blank"
+                  >GitHub</a
+                >
+                <hr />
+                <a
+                  href="https://chat-app-7l4x5.sevalla.app/login"
+                  target="_blank"
+                  >Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-box" id="frontend-dev">
+          <img src="images/Portfolio.jpeg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Frontend Developer</h4>
+            <p>Studly — Gamified Study Habit Tracker</p>
+            <a href="#studly-modal" class="btn">View Details</a>
+        </div>
+
+             <div id="studly-modal" class="modal">
+            <div class="modal-content">
+              <a href="#portfolio" class="close">&times;</a>
+
+              <h2>Studly Application</h2>
+
+              <p>
+                
+              </p>
+
+              <h4>Key Highlights</h4>
+              <ul>
+                <li>Gamified habit tracking with badges and streaks</li>
+                <li>Social features for shared progress and study meetups</li>
+                <li>Agile development across multiple sprints</li>
+                <li>Frontend-focused contribution in a collaborative team environment</li>
+                <li>Dockerized frontend and backend services</li>
+              </ul>
+
+              <div class="modal-links">
+                <a href="https://github.com/HaMeD1379/Studly" target="_blank"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+        </div>
+      </div>
     </section>
 
     <section class="contact" id="contact">
-        <h2 class = "heading">Contact <span>Me!</span></h2>
-        <form action="#">
-            <div class ="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email address">
-            </div>
-
-            <div class="input-box">
-                <input type="number" placeholder="Phone Number">
-                <input type="text" placeholder="Email Subject">
-                </div>
-
-                <textarea name ="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-                <input type="submit" value ="send Message" class = "btn">
-        </form>
-       
-
+      <h2 class="heading">Contact <span>Me!</span></h2>
+      <form action="mailto:anthonyokolie.ace@gmail.com" method="post">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email address" />
         </div>
+        <div class="input-box">
+          <input type="number" placeholder="Phone Number" />
+          <input type="text" placeholder="Email Subject" />
+        </div>
+
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your message"
+        ></textarea>
+        <input
+          id="contact-btn"
+          type="submit"
+          value="send Message"
+          class="btn"
+        />
+      </form>
+
+      <div class="flex-container">
+        <p>For more information, feel free to reach out!</p>
+      </div>
     </section>
 
     <!--footer-->
 
     <footer class="footer">
-        <div class = "footer-text">
-            <p>Copyright &copy; 2026 by Anthony Okolie | All rights reserved.</p>
-        </div>
+      <div class="footer-text">
+        <p>Copyright &copy; 2026 by Anthony Okolie | All rights reserved.</p>
+      </div>
 
-        <div class="footer-iconTop">
-            <a href="#home"><i class = 'bx bx-up-arrow-alt'></i></a>
-
-        </div>
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
     </footer>
 
     <!--scroll reveal-->
@@ -172,8 +317,6 @@ import 'boxicons'
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-    <script src = "script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
-

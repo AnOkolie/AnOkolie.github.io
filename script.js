@@ -2,10 +2,16 @@
 
 let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
+let contactBtn = document.querySelector("#contact-btn");
+let header = document.querySelector("header");
 
 menuIcon.onClick = () => {
   menuIcon.classList.toggle("bx-x");
   navbar.classList.toggle("active");
+};
+
+contactBtn.onClick = () => {
+  header.classList.toggle("alert");
 };
 
 let sections = document.querySelectorAll("section");
@@ -44,7 +50,6 @@ window.onscroll = () => {
 
 ScrollReveal({
   reset: true,
-  distance: "30px",
   duration: 2000,
   delay: 100,
 });
