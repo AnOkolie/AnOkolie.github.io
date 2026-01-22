@@ -199,6 +199,7 @@ span {
 .services-container {
   display: flex;
   justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
