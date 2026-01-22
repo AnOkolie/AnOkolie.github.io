@@ -80,9 +80,6 @@ import 'boxicons'
         >
       </div>
 
-      <div class="home-img">
-        <img src="images/portrait.jpeg" alt="self portrait" />
-      </div>
     </section>
 
     <!--custom js-->
@@ -90,7 +87,7 @@ import 'boxicons'
     <!--about section-->
     <section class="about" id="about">
       <div class="about-img">
-        <img src="images/portrait.jpeg" alt="self portrait" />
+        <img src="images/portrait.png" alt="self portrait" />
       </div>
 
       <div class="about-content">
@@ -130,6 +127,12 @@ import 'boxicons'
         <div class="services-box">
           <i class="bx bxl-react"></i>
           <h3>Frontend Development</h3>
+          <div style="padding: 10px">
+            <a href="#portfolio" class="btn">READ MORE</a>
+          </div>
+          <div class="services-box">
+          <i class="bx bxl-react"></i>
+          <h3>Mobile App Development</h3>
           <div style="padding: 10px">
             <a href="#portfolio" class="btn">READ MORE</a>
           </div>
@@ -266,6 +269,52 @@ import 'boxicons'
             </div>
         </div>
       </div>
+
+      <!-- IOS APP -->
+      <div class="portfolio-box" id="backend-dev">
+          <img src="images/Portfolio.jpeg" alt="" />
+          <!-- Project Card -->
+          <div class="portfolio-layer">
+            <h4>Media Sleep Ios App</h4>
+            <p>Tracks user behaviour using apples API to determine when the user is asleep and pause media</p>
+            <a href="#MediaSleep-modal" class="btn">View Details</a>
+          </div>
+
+          <!-- Modal -->
+          <div id="MediaSleep-modal" class="modal">
+            <div class="modal-content">
+              <a href="#portfolio" class="close">&times;</a>
+
+              <h2>Media Sleep Ios App</h2>
+
+              <p>
+                Media sleep is an app I am currently developing that Tracks user behaviour using apples API to determine when the user is asleep and pause media
+              </p>
+
+              <p>
+                I came up with this idea because I like to fall asleep listening to podcasts, which means the next night I have to try and guess the point at which I fell asleep
+              </p>
+
+              <p>
+                Media sleep solves this!
+              </p>
+              <br>
+
+              <h4>Key Features</h4>
+              <ul>
+                <li>Uses apples healthkit API</li>
+                <li>Real-time signiaing from apple watch app</li>
+                <li>Developed using the swift language</li>
+              </ul>
+              <br>
+              <div class="modal-links">
+                <a href="https://github.com/AnOkolie/MediaSleep" target="_blank"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
 
     <section class="contact" id="contact">
@@ -294,10 +343,6 @@ import 'boxicons'
           class="btn"
         />
       </form>
-
-      <div class="flex-container">
-        <p>For more information, feel free to reach out!</p>
-      </div>
     </section>
 
     <!--footer-->
