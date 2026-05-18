@@ -340,8 +340,49 @@ span {
   color: var(--second-bg-color);
 }
 
-.contact h2 {
-  margin-bottom: 3rem;
+.contact {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contact-subtext {
+  max-width: 600px;
+  margin: 10px auto 40px;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 16px 24px;
+  border-radius: 12px;
+
+  background: #1f1f1f;
+  color: #fff;
+  text-decoration: none;
+
+  min-width: 160px;
+
+  transition: all 0.25s ease;
+  border: 1px solid transparent;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  border: 1px solid #4f9eff;
+  background: #262626;
+  box-shadow: 0 0 20px rgba(79, 158, 255, 0.3);
 }
 
 .menu-icon i {
@@ -449,43 +490,6 @@ li {
   cursor: pointer;
 }
 
-.contact form {
-  max-width: 70rem;
-  margin: 1rem auto;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.contact form .input-box {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.contact form .input-box input,
-.contact form textarea {
-  width: 100%;
-  padding: 1.5rem;
-  font-size: 1.6rem;
-  color: var(black);
-  background: var(var(--second-bg-color));
-  border-radius: 0.8rem;
-  margin: 0.7rem 0;
-}
-
-.contact form .input-box input {
-  width: 49%;
-}
-
-.contact form textarea {
-  resize: none;
-}
-
-.contact form .btn {
-  margin-top: 2rem;
-  cursor: pointer;
-}
-
 .footer {
   display: flex;
   justify-content: space-between;
@@ -544,9 +548,6 @@ li {
   }
   .portfolio {
     padding-bottom: 7rem;
-  }
-  .contact {
-    min-height: auto;
   }
 }
 
@@ -625,10 +626,6 @@ li {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
-  }
-
-  .contact form .input-box input {
-    width: 100%;
   }
 }
 @media (max-width: 365px) {
