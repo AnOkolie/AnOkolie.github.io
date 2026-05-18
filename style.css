@@ -107,6 +107,16 @@ section {
   shape-margin: 100%;
 }
 
+.github-link {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.github-link:hover {
+  color: #ccc;
+}
+
 @keyframes floatImage {
   0% {
     transform: translateY(0);
