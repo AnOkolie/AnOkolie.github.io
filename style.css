@@ -28,6 +28,12 @@ body {
   color: var(--text-color);
 }
 
+a {
+  display: inline-block;
+  min-width: 20px;
+  min-height: 20px;
+}
+
 .header {
   position: fixed;
   top: 0;
