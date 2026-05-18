@@ -113,6 +113,12 @@ section {
   }
 }
 
+.portfolio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px; /* Space between columns */
+}
+
 .social-media a {
   display: inline-flex;
   justify-content: center;
