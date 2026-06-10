@@ -1,3 +1,4 @@
+import 'boxicons'
 <!doctype html>
 <html lang="en">
   <head>
@@ -48,7 +49,7 @@
       <div class="home-content">
         <h3>Hi, it's me</h3>
         <h1>Anthony Okolie</h1>
-        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <h3>And I'm a <span id="multiple-text"></span></h3>
         <p class="hero-subtext">
   Software developer specializing in real-time, data-driven applications and scalable backend systems using modern full-stack technologies.
 </p>
@@ -186,7 +187,23 @@
     <!--scroll reveal-->
 
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Typed.js -->
+    <script>
+      const typed = new Typed("#multiple-text", {
+  strings: [
+    "Backend Developer",
+    "Software Engineer",
+    "Frontend Developer",
+    "Data Analyst",
+    "Web Developer",
+  ],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: true,
+});
+    </script>
 
     <script src="script.js"></script>
   </body>

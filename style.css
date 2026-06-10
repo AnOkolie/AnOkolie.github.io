@@ -563,6 +563,10 @@ span {
   transition: var(--transition);
 }
 
+.footer-iconTop a i {
+  size: 2rem;
+}
+
 .footer-iconTop a:hover {
   box-shadow: 0 0 1rem var(--main-color);
 }

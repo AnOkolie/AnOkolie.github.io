@@ -66,17 +66,3 @@ ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
 ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
 
 /*typed js*/
-
-const typed = new Typed(".multiple-text", {
-  strings: [
-    "Backend Developer",
-    "Software Engineer",
-    "Frontend Developer",
-    "Data Analyst",
-    "Web Developer",
-  ],
-  typeSpeed: 100,
-  backSpeed: 100,
-  backDelay: 1000,
-  loop: true,
-});
