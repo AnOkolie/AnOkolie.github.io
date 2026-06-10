@@ -1,0 +1,174 @@
+<div class="portfolio-box" id="frontend-dev">
+      <img src="images/Portfolio.jpeg" alt="" />
+
+      <div class="portfolio-layer">
+        <h4>Real-Time Collaborative Document Editor </h4>
+        <a href="#collab-document-modal" class="btn">View Details</a>
+      </div>
+
+      <div id="collab-document-modal" class="modal">
+       <div class="modal-content">
+          <a href="#portfolio" class="close">&times;</a>
+
+          <h2>Real-Time Collaborative Document Editor </h2>
+
+          <h4>Key Highlights</h4>
+          <ul>
+            <li>Built a scalable real-time collaborative document editor using Angular, Node.js, and WebSockets, enabling concurrent multi-user editing with low-latency synchronization</li>
+            <li>real-time presence features including live cursors and user session tracking</li>
+            <li>Designed a horizontally scalable backend using Redis Pub/Sub to synchronize state across multiple server instances</li>
+          </ul>
+
+          <div class="modal-links">
+            <a href="https://github.com/AnOkolie/collabBoard" target="_blank" rel="noopener noreferrer" class="github-link">
+              <span class="fa-brands fa-github fa-flip"></span>
+            </a>
+             <a href="https://collab-board-pink-eight.vercel.app/" target="_blank" rel="noopener noreferrer" class="demo-link">
+              <span >Live Demo</span>
+            </a>
+          </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="portfolio-box" id="frontend-dev">
+      <img src="images/Portfolio.jpeg" alt="" />
+
+      <div class="portfolio-layer">
+        <h4>Media Sleep iOS App</h4>
+        <p>
+          Uses Apple APIs to detect sleep and automatically pause media.
+        </p>
+        <a href="#mediaSleep-modal" class="btn">View Details</a>
+      </div>
+
+      <div id="mediaSleep-modal" class="modal">
+       <div class="modal-content">
+          <a href="#portfolio" class="close">&times;</a>
+
+          <h2>Media Sleep iOS App</h2>
+
+          <h4>Key Highlights</h4>
+          <ul>
+            <li>Media Sleep detects when a user falls asleep and automatically pauses
+            media playback.</li>
+            <li>Built to solve the problem of losing your place in podcasts when
+            falling asleep.</li>
+            <li>Apple Watch signaling</li>
+          </ul>
+
+          <div class="modal-links">
+            <a href="https://github.com/AnOkolie/MediaSleep" target="_blank" rel="noopener noreferrer" class="github-link">
+              <span class="fa-brands fa-github fa-flip"></span>
+            </a>
+          </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="portfolio-box" id="frontend-dev">
+      <img src="images/Portfolio.jpeg" alt="" />
+
+      <div class="portfolio-layer">
+        <h4>AI Generative POS dashboard</h4>
+        <a href="#pos-dashboard-modal" class="btn">View Details</a>
+      </div>
+
+      <div id="pos-dashboard-modal" class="modal">
+       <div class="modal-content">
+          <a href="#portfolio" class="close">&times;</a>
+
+          <h2>AI Generative POS dashboard</h2>
+
+          <h4>Key Highlights</h4>
+          <ul>
+            <li>Used Tambo ai to create a pos dashboard</li>
+            <li>Developed a full-stack POS backend to manage products, inventory, carts, sales, and customers</li>
+            <li>Implemented database-level constraints and triggers to enforce business rules (e.g., preventing cart modification after checkout) and built RESTful APIs with type-safe validation using Zod.</li>
+          </ul>
+
+          <div class="modal-links">
+            <a href="https://github.com/AnOkolie/pos-dashboard" target="_blank" rel="noopener noreferrer" class="github-link">
+              <span class="fa-brands fa-github fa-flip"></span>
+            </a>
+          </div>
+      </div>
+    </div>
+    </div>
+
+     <!-- CHAT APP -->
+    <div class="portfolio-box" id="backend-dev">
+      <img src="images/Portfolio.jpeg" alt="" />
+
+      <div class="portfolio-layer">
+        <h4>Real-Time Chat App</h4>
+        <p>Socket.IO powered real-time messaging</p>
+        <a href="#chat-modal" class="btn">View Details</a>
+      </div>
+
+      <div id="chat-modal" class="modal">
+        <div class="modal-content">
+          <a href="#portfolio" class="close">&times;</a>
+
+          <h2>Real-Time Chat Application</h2>
+
+          <p>
+            A full-stack real-time chat app built with React, Node.js, and
+            Socket.IO, supporting authentication, media uploads, and live
+            presence tracking.
+          </p>
+
+          <h4>Key Features</h4>
+          <ul>
+            <li>JWT authentication</li>
+            <li>Real-time messaging with Socket.IO</li>
+            <li>Online/offline presence</li>
+            <li>Image uploads via Cloudinary</li>
+          </ul>
+
+          <div class="modal-links">
+            <a href="https://github.com/AnOkolie/chat-app" target="_blank" rel="noopener noreferrer" class="github-link">
+              <span class="fa-brands fa-github fa-flip"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     <!-- EXPENSE TRACKER -->
+    <div class="portfolio-box" id="web-dev">
+      <img src="images/Portfolio.jpeg" alt="" />
+
+      <div class="portfolio-layer">
+        <h4>Expense Tracker App</h4>
+        <p>
+          A full-stack application that allows users to track expenses with
+          authentication and protected routes.
+        </p>
+        <a href="#expense-modal" class="btn">View details</a>
+      </div>
+
+      <div id="expense-modal" class="modal">
+        <div class="modal-content">
+          <a href="#portfolio" class="close">&times;</a>
+
+          <h2>Expense Tracker App</h2>
+
+          <h4>Key Highlights</h4>
+          <ul>
+            <li>Authentication and protected routes</li>
+            <li>Secure expense management</li>
+            <li>Full-stack architecture</li>
+          </ul>
+
+          <div class="modal-links">
+            <a href="https://github.com/AnOkolie/expense-tracker" target="_blank" rel="noopener noreferrer" class="github-link">
+              <span class="fa-brands fa-github fa-flip"></span>
+            </a>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </div>

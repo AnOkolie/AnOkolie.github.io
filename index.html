@@ -29,7 +29,7 @@ import 'boxicons'
           <a href="#contact">Contact</a>
           <a
             download="Anthony_Okolie_Resume.pdf"
-            href="/Resume/Anthony_Okolie_Software_Development_Engineer.pdf"
+            href="/Resume/Anthony_Okolie_(General).pdf"
           >
             Resume</a
           >
@@ -56,14 +56,14 @@ import 'boxicons'
 </p>
         <div class="social-media">
           <a href="https://www.linkedin.com/in/anthony-okolie-78b77926a/"
-            ><i class="bx bxl-linkedin"></i
+            aria-label="Linkedin Url"><i class="bx bxl-linkedin"></i
           ></a>
           <a href="https://github.com/AnOkolie"
-            ><i class="bx bxl-github"></i
+            aria-label="Github Url"><i class="bx bxl-github"></i
           ></a>
         </div>
         <a
-          href="Resume/Anthony_Okolie_Resume.pdf"
+          href="Resume/Anthony_Okolie_(General).pdf"
           class="btn"
           download="resume.pdf"
           >Download Resume</a
@@ -150,74 +150,135 @@ import 'boxicons'
 
   <div class="portfolio-container">
 
-    <!-- EXPENSE TRACKER -->
-    <div class="portfolio-box" id="web-dev">
+    <!-- Secret Vault API -->
+    <div class="portfolio-box" id="frontend-dev">
       <img src="images/Portfolio.jpeg" alt="" />
 
       <div class="portfolio-layer">
-        <h4>Expense Tracker App</h4>
-        <p>
-          A full-stack application that allows users to track expenses with
-          authentication and protected routes.
-        </p>
-        <a href="#expense-modal" class="btn">View details</a>
+        <h4>Secure Secret Vault API</h4>
+        <p>Backend service for storage and retrieval of secrets</p>
+        <div class="tech-stack">
+          <span>Golang |</span>
+          <span>Docker |</span>
+          <span>JWT |</span>
+          <span>Postgres</span>
+          <span></span>
+        </div>
+        <a href="#secret-vault-modal" class="btn">View Details</a>
       </div>
 
-      <div id="expense-modal" class="modal">
+      <div id="secret-vault-modal" class="modal">
         <div class="modal-content">
           <a href="#portfolio" class="close">&times;</a>
 
-          <h2>Expense Tracker App</h2>
+          <h2>Secure Secret Vault API</h2>
 
           <h4>Key Highlights</h4>
           <ul>
-            <li>Authentication and protected routes</li>
-            <li>Secure expense management</li>
-            <li>Full-stack architecture</li>
+            <li>Uses JWT for authentication and access control</li>
+            <li>Password storage using PostgreSQL</li>
+            <li>Docker for containerization and reproducibility</li>
+            <li>API testing done with Postman</li>
           </ul>
 
           <div class="modal-links">
-            <a href="https://github.com/AnOkolie/expense-tracker" target="_blank" rel="noopener noreferrer" class="github-link">
+            <a href="https://github.com/AnOkolie/secret-vault" target="_blank" rel="noopener noreferrer" class="github-link" aria-label="Repo Link">
               <span class="fa-brands fa-github fa-flip"></span>
             </a>
-            <hr />
           </div>
         </div>
       </div>
     </div>
 
-    <!-- CHAT APP -->
-    <div class="portfolio-box" id="backend-dev">
+    <!--Real time collaboration board-->
+    <div class="portfolio-box" id="frontend-dev">
       <img src="images/Portfolio.jpeg" alt="" />
 
       <div class="portfolio-layer">
-        <h4>Real-Time Chat App</h4>
-        <p>Socket.IO powered real-time messaging</p>
-        <a href="#chat-modal" class="btn">View Details</a>
+        <h4>Real-Time Collaboration Board</h4>
+        <p>Interactive Kanban-style collaboration board</p>
+        <div class="tech-stack">
+        <span>TypeScript |</span>
+        <span>Node.js |</span>
+        <span>Express |</span>
+        <span>React |</span>
+        <span>PostgreSQL |</span>
+        <span>Vercel |</span>
+        <span>Railway</span>
+      </div>
+        <a href="#collab_board-modal" class="btn">View Details</a>
       </div>
 
-      <div id="chat-modal" class="modal">
+      <div id="collab_board-modal" class="modal">
+       <div class="modal-content">
+          <a href="#portfolio" class="close">&times;</a>
+
+          <h2>Real time Collaboration Board</h2>
+
+          <h4>Key Highlights</h4>
+          <ul>
+            <li>Kanban style collab board</li>
+            <li>Real time updates of changes on boards</li>
+            <li>Agile development across multiple sprints</li>
+            <li>Frontend hosted on Vercel</li>
+            <li>Backend hosted on Railway</li>
+          </ul>
+
+          <div class="modal-links" display>
+            <a href="https://github.com/AnOkolie/collabBoard" target="_blank" rel="noopener noreferrer" class="github-link" aria-label="Repo Link">
+              <span class="fa-brands fa-github fa-flip"></span>
+            </a>
+            <a href="https://collab-board-pink-eight.vercel.app/" target="_blank" rel="noopener noreferrer" class="github-link" aria-label="Demo Link">
+              <span class="fa-solid fa-play fa-beat"></span>
+            </a>
+          </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- News Scrapper  -->
+    <div class="portfolio-box" id="frontend-dev">
+      <div class="video-container">
+        <video controls autoplay>
+              <source src="./videos/NewsPipeline.mov" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+      </div>
+
+      <div class="portfolio-layer">
+        <h4>News Scrapper</h4>
+        <p>Hackernews web scrapper with AI text analysis</p>
+        <div class="tech-stack">
+        <span>JavaScript |</span>
+        <span>Playwright |</span>
+        <span>PostgreSQL |</span>
+        <span>OpenAI |</span>
+        <span>Vitest</span>
+        <span>Prisma</span>
+      </div>
+        <a href="#news-scrapper-modal" class="btn">View Details</a>
+      </div>
+
+      <div id="news-scrapper-modal" class="modal">
         <div class="modal-content">
           <a href="#portfolio" class="close">&times;</a>
 
-          <h2>Real-Time Chat Application</h2>
+          <h2>Studly Application</h2>
 
-          <p>
-            A full-stack real-time chat app built with React, Node.js, and
-            Socket.IO, supporting authentication, media uploads, and live
-            presence tracking.
-          </p>
-
-          <h4>Key Features</h4>
+          <h4>Key Highlights</h4>
           <ul>
-            <li>JWT authentication</li>
-            <li>Real-time messaging with Socket.IO</li>
-            <li>Online/offline presence</li>
-            <li>Image uploads via Cloudinary</li>
+            <li>Hackernews feed scrapper using Playwright</li>
+            <li>Playwright test for Quality Assurance & Validation</li>
+            <li>OpenAi Integration to analyse text and semantics</li>
+            <li>Relational Schema and queries to store and track keywords and frequently occuring topics from articles</li>
+            <li>Prisma Modelling for database querying</li>
+            <li>Vitest testing for unit tests</li>
           </ul>
-
+          <div>
+            
+          </div>
           <div class="modal-links">
-            <a href="https://github.com/AnOkolie/chat-app" target="_blank" rel="noopener noreferrer" class="github-link">
+            <a href="https://github.com/AnOkolie/news-scrapper" target="_blank" rel="noopener noreferrer" class="github-link" aria-label="Repo Link">
               <span class="fa-brands fa-github fa-flip"></span>
             </a>
           </div>
@@ -225,13 +286,20 @@ import 'boxicons'
       </div>
     </div>
 
-    <!-- STUDLY -->
+    <!-- Studly -->
     <div class="portfolio-box" id="frontend-dev">
       <img src="images/Portfolio.jpeg" alt="" />
 
       <div class="portfolio-layer">
         <h4>Studly</h4>
         <p>Gamified Study Habit Tracker</p>
+        <div class="tech-stack" >
+        <span>React |</span>
+        <span>Node.js |</span>
+        <span>PostgreSQL |</span>
+        <span>Postman |</span>
+        <span>Vitest</span>
+      </div>
         <a href="#studly-modal" class="btn">View Details</a>
       </div>
 
@@ -251,7 +319,7 @@ import 'boxicons'
           </ul>
 
           <div class="modal-links">
-            <a href="https://github.com/HaMeD1379/Studly" target="_blank" rel="noopener noreferrer" class="github-link">
+            <a href="https://github.com/HaMeD1379/Studly" target="_blank" rel="noopener noreferrer" class="github-link" aria-label="Repo Link">
               <span class="fa-brands fa-github fa-flip"></span>
             </a>
           </div>
@@ -259,132 +327,42 @@ import 'boxicons'
       </div>
     </div>
 
+    <!-- Trade Microservice -->
     <div class="portfolio-box" id="frontend-dev">
       <img src="images/Portfolio.jpeg" alt="" />
 
       <div class="portfolio-layer">
-        <h4>Real-Time Collaboration Board</h4>
-        <p>Interactive Kanban-style collaboration board</p>
-        <a href="#collab_board-modal" class="btn">View Details</a>
+        <h4>Trade Execution Microservice</h4>
+        <p>A real-world trade trade execution workflow simulator</p>
+        <div class="tech-stack">
+          <span>Java |</span>
+          <span>SpringBoot |</span>
+          <span>PostgreSQL</span>
+        </div>
+        <a href="#trade-modal" class="btn">View Details</a>
       </div>
 
-      <div id="collab_board-modal" class="modal">
-       <div class="modal-content">
+      <div id="trade-modal" class="modal">
+        <div class="modal-content">
           <a href="#portfolio" class="close">&times;</a>
 
-          <h2>Real time Collaboration Board</h2>
+          <h2>Studly Application</h2>
 
           <h4>Key Highlights</h4>
           <ul>
-            <li>Kanban style collab board</li>
-            <li>Real time updates of changes on boards</li>
-            <li>Agile development across multiple sprints</li>
-            <li>Frontend hosted on aws amplify</li>
-            <li>Backend hosted on aws elastic beanstalk</li>
+            <li>Process trade requests with validation and concurrency</li>
+            <li>Relational schema and optimized queries to improve performance</li>
           </ul>
 
           <div class="modal-links">
-            <a href="https://github.com/AnOkolie/collabBoard" target="_blank" rel="noopener noreferrer" class="github-link">
+            <a href="https://github.com/AnOkolie/TradeExecutionMicroservice" target="_blank" rel="noopener noreferrer" class="github-link" aria-label="Repo Link">
               <span class="fa-brands fa-github fa-flip"></span>
             </a>
           </div>
+        </div>
       </div>
     </div>
-    </div>
-
-    <div class="portfolio-box" id="frontend-dev">
-      <img src="images/Portfolio.jpeg" alt="" />
-
-      <div class="portfolio-layer">
-        <h4>AI Generative POS dashboard</h4>
-        <a href="#pos-dashboard-modal" class="btn">View Details</a>
-      </div>
-
-      <div id="pos-dashboard-modal" class="modal">
-       <div class="modal-content">
-          <a href="#portfolio" class="close">&times;</a>
-
-          <h2>AI Generative POS dashboard</h2>
-
-          <h4>Key Highlights</h4>
-          <ul>
-            <li>Used Tambo ai to create a pos dashboard</li>
-            <li>Developed a full-stack POS backend to manage products, inventory, carts, sales, and customers</li>
-            <li>Implemented database-level constraints and triggers to enforce business rules (e.g., preventing cart modification after checkout) and built RESTful APIs with type-safe validation using Zod.</li>
-          </ul>
-
-          <div class="modal-links">
-            <a href="https://github.com/AnOkolie/pos-dashboard" target="_blank" rel="noopener noreferrer" class="github-link">
-              <span class="fa-brands fa-github fa-flip"></span>
-            </a>
-          </div>
-      </div>
-    </div>
-    </div>
-    <div class="portfolio-box" id="frontend-dev">
-      <img src="images/Portfolio.jpeg" alt="" />
-
-      <div class="portfolio-layer">
-        <h4>Real-Time Collaborative Document Editor </h4>
-        <a href="#collab-document-modal" class="btn">View Details</a>
-      </div>
-
-      <div id="collab-document-modal" class="modal">
-       <div class="modal-content">
-          <a href="#portfolio" class="close">&times;</a>
-
-          <h2>Real-Time Collaborative Document Editor </h2>
-
-          <h4>Key Highlights</h4>
-          <ul>
-            <li>Built a scalable real-time collaborative document editor using Angular, Node.js, and WebSockets, enabling concurrent multi-user editing with low-latency synchronization</li>
-            <li>real-time presence features including live cursors and user session tracking</li>
-            <li>Designed a horizontally scalable backend using Redis Pub/Sub to synchronize state across multiple server instances</li>
-          </ul>
-
-          <div class="modal-links">
-            <a href="https://github.com/AnOkolie/TextEditor" target="_blank" rel="noopener noreferrer" class="github-link">
-              <span class="fa-brands fa-github fa-flip"></span>
-            </a>
-          </div>
-      </div>
-    </div>
-    </div>
-    <div class="portfolio-box" id="frontend-dev">
-      <img src="images/Portfolio.jpeg" alt="" />
-
-      <div class="portfolio-layer">
-        <h4>Media Sleep iOS App</h4>
-        <p>
-          Uses Apple APIs to detect sleep and automatically pause media.
-        </p>
-        <a href="#mediaSleep-modal" class="btn">View Details</a>
-      </div>
-
-      <div id="mediaSleep-modal" class="modal">
-       <div class="modal-content">
-          <a href="#portfolio" class="close">&times;</a>
-
-          <h2>Media Sleep iOS App</h2>
-
-          <h4>Key Highlights</h4>
-          <ul>
-            <li>Media Sleep detects when a user falls asleep and automatically pauses
-            media playback.</li>
-            <li>Built to solve the problem of losing your place in podcasts when
-            falling asleep.</li>
-            <li>Apple Watch signaling</li>
-          </ul>
-
-          <div class="modal-links">
-            <a href="https://github.com/AnOkolie/MediaSleep" target="_blank" rel="noopener noreferrer" class="github-link">
-              <span class="fa-brands fa-github fa-flip"></span>
-            </a>
-          </div>
-      </div>
-    </div>
-    </div>
-  </div>
+    
 </section>
 
    <section class="contact" id="contact">
@@ -395,7 +373,7 @@ import 'boxicons'
   </p>
 
   <div class="contact-cards">
-    <a href="mailto:anthonyokolie.ace@gmail.com" class="github-link">
+    <a href="mailto:anthonyokolie.ace@gmail.com" class="github-link" aria-label="Mail link">
       <span class="fa-solid fa-envelope fa-beat"></span>
     </a>
 
@@ -404,6 +382,7 @@ import 'boxicons'
       class="github-link"
       target="_blank"
       rel="noopener noreferrer"
+      aria-label="Linkedin Url"
     >
      <span class="fa-brands fa-linkedin fa-beat"></span>
     </a>
@@ -413,6 +392,7 @@ import 'boxicons'
       class="github-link"
       target="_blank"
       rel="noopener noreferrer"
+      aria-label="Github Url"
     >
       <span class="fa-brands fa-github fa-beat"></span>
     </a>
@@ -427,7 +407,7 @@ import 'boxicons'
       </div>
 
       <div class="footer-iconTop">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        <a href="#home" aria-label="Home navigation"><i class="bx bx-up-arrow-alt"></i></a>
       </div>
     </footer>
 

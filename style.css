@@ -308,6 +308,15 @@ span {
   transform: scale(1.08);
 }
 
+.tech-stack {
+  box-sizing: border-box; /* Includes padding in the element's total width/height */
+}
+
+.tech-stack span {
+  color: #ffffff;
+  font-size: medium;
+  font-weight: 700;
+}
 .portfolio-layer {
   position: absolute;
   inset: 0;
@@ -336,7 +345,7 @@ span {
 
 .portfolio-layer p {
   font-size: 1.5rem;
-  margin: 1rem 0 2rem;
+  margin: 1rem 0 1rem;
 }
 
 /* =========================
@@ -429,6 +438,11 @@ span {
   color: #333;
 
   animation: modalSlide 0.3s ease;
+}
+
+.modal-links {
+  display: flex;
+  gap: 16px;
 }
 
 .modal-content h2,
@@ -597,4 +611,22 @@ span {
     flex-direction: column-reverse;
     text-align: center;
   }
+}
+
+.demo-link span {
+  font-size: 1.7rem;
+}
+
+/* Video container */
+.video-container {
+  margin: 1.5rem 0;
+}
+
+.video-container video {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
 }
