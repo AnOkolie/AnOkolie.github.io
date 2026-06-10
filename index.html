@@ -1,5 +1,3 @@
-import 'boxicons'
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -18,7 +16,7 @@ import 'boxicons'
 
   <body>
     <header class="header">
-      <a href="#" class="logo">My Portfolio</a>
+      <a href="#home" class="logo">My Portfolio</a>
       <div class="menu-icon">
         <i class="bx bx-menu" id="menu-icon" on></i>
         <div class="dropdown-content">
@@ -99,271 +97,45 @@ import 'boxicons'
         <div class="services-box">
           <i class="bx bx-code-alt"></i>
           <h3>Web Development</h3>
-          <div style="padding: 10px">
-            <a href="#portfolio" class="btn">READ MORE</a>
-          </div>
         </div>
 
         <div class="services-box">
           <i class="bx bxl-java"></i>
           <h3>Backend Development</h3>
-          <div style="padding: 10px">
-            <a href="#portfolio" class="btn">READ MORE</a>
-          </div>
         </div>
+
         <div class="services-box">
           <i class="bx bxl-react"></i>
           <h3>Frontend Development</h3>
-          <div style="padding: 10px">
-            <a href="#portfolio" class="btn">READ MORE</a>
-          </div>
       </div>
+
       <div class="services-box">
           <i class="bx bxl-react"></i>
           <h3>Mobile App Development</h3>
-          <div style="padding: 10px">
-            <a href="#portfolio" class="btn">READ MORE</a>
-          </div>
         </div>
+
         <div class="services-box">
           <i class="bx bx-code-alt"></i>
           <h3>Data Analyst</h3>
-          <div style="padding: 10px">
-            <a href="#data-analyst-modal" class="btn">READ MORE</a>
-          </div>
-          <div class= "modal" id = "data-analyst-modal">
-              <div class="modal-content">
-                  <a href="#services" class="close">&times;</a>
-                  <h2>Data Analyst</h2>
-                  <p>Coursework in data mining and analytics has given me experience analyzing structured datasets to identify trends and insights.</p>
-                  <p>I use tools like Excel, Tableau, and Power BI to clean, visualize, and present data effectively.</p>
-              </div>
-
-        </div>
       </div>
     </section>
 
     <!--portfolio-->
+    <section class="view-projects" id="view-projects">
+  <div class="view-projects-container">
+    <h1>Explore My Projects</h1>
 
-    <section class="portfolio" id="portfolio">
-  <h2 class="heading">Latest <span>Projects</span></h2>
+    <p>
+      Full-stack applications, backend services, AI integrations,
+      and cloud-native solutions.
+    </p>
 
-  <div class="portfolio-container">
-
-    <!-- Secret Vault API -->
-    <div class="portfolio-box" id="frontend-dev">
-      <img src="images/Portfolio.jpeg" alt="" />
-
-      <div class="portfolio-layer">
-        <h4>Secure Secret Vault API</h4>
-        <p>Backend service for storage and retrieval of secrets</p>
-        <div class="tech-stack">
-          <span>Golang |</span>
-          <span>Docker |</span>
-          <span>JWT |</span>
-          <span>Postgres</span>
-          <span></span>
-        </div>
-        <a href="#secret-vault-modal" class="btn">View Details</a>
-      </div>
-
-      <div id="secret-vault-modal" class="modal">
-        <div class="modal-content">
-          <a href="#portfolio" class="close">&times;</a>
-
-          <h2>Secure Secret Vault API</h2>
-
-          <h4>Key Highlights</h4>
-          <ul>
-            <li>Uses JWT for authentication and access control</li>
-            <li>Password storage using PostgreSQL</li>
-            <li>Docker for containerization and reproducibility</li>
-            <li>API testing done with Postman</li>
-          </ul>
-
-          <div class="modal-links">
-            <a href="https://github.com/AnOkolie/secret-vault" target="_blank" rel="noopener noreferrer" class="github-link" aria-label="Repo Link">
-              <span class="fa-brands fa-github fa-flip"></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--Real time collaboration board-->
-    <div class="portfolio-box" id="frontend-dev">
-      <img src="images/Portfolio.jpeg" alt="" />
-
-      <div class="portfolio-layer">
-        <h4>Real-Time Collaboration Board</h4>
-        <p>Interactive Kanban-style collaboration board</p>
-        <div class="tech-stack">
-        <span>TypeScript |</span>
-        <span>Node.js |</span>
-        <span>Express |</span>
-        <span>React |</span>
-        <span>PostgreSQL |</span>
-        <span>Vercel |</span>
-        <span>Railway</span>
-      </div>
-        <a href="#collab_board-modal" class="btn">View Details</a>
-      </div>
-
-      <div id="collab_board-modal" class="modal">
-       <div class="modal-content">
-          <a href="#portfolio" class="close">&times;</a>
-
-          <h2>Real time Collaboration Board</h2>
-
-          <h4>Key Highlights</h4>
-          <ul>
-            <li>Kanban style collab board</li>
-            <li>Real time updates of changes on boards</li>
-            <li>Agile development across multiple sprints</li>
-            <li>Frontend hosted on Vercel</li>
-            <li>Backend hosted on Railway</li>
-          </ul>
-
-          <div class="modal-links" display>
-            <a href="https://github.com/AnOkolie/collabBoard" target="_blank" rel="noopener noreferrer" class="github-link" aria-label="Repo Link">
-              <span class="fa-brands fa-github fa-flip"></span>
-            </a>
-            <a href="https://collab-board-pink-eight.vercel.app/" target="_blank" rel="noopener noreferrer" class="github-link" aria-label="Demo Link">
-              <span class="fa-solid fa-play fa-beat"></span>
-            </a>
-          </div>
-      </div>
-    </div>
-    </div>
-
-    <!-- News Scrapper  -->
-    <div class="portfolio-box" id="frontend-dev">
-      <div class="video-container">
-        <video controls autoplay>
-              <source src="./videos/NewsPipeline.mov" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-      </div>
-
-      <div class="portfolio-layer">
-        <h4>News Scrapper</h4>
-        <p>Hackernews web scrapper with AI text analysis</p>
-        <div class="tech-stack">
-        <span>JavaScript |</span>
-        <span>Playwright |</span>
-        <span>PostgreSQL |</span>
-        <span>OpenAI |</span>
-        <span>Vitest</span>
-        <span>Prisma</span>
-      </div>
-        <a href="#news-scrapper-modal" class="btn">View Details</a>
-      </div>
-
-      <div id="news-scrapper-modal" class="modal">
-        <div class="modal-content">
-          <a href="#portfolio" class="close">&times;</a>
-
-          <h2>Studly Application</h2>
-
-          <h4>Key Highlights</h4>
-          <ul>
-            <li>Hackernews feed scrapper using Playwright</li>
-            <li>Playwright test for Quality Assurance & Validation</li>
-            <li>OpenAi Integration to analyse text and semantics</li>
-            <li>Relational Schema and queries to store and track keywords and frequently occuring topics from articles</li>
-            <li>Prisma Modelling for database querying</li>
-            <li>Vitest testing for unit tests</li>
-          </ul>
-          <div>
-            
-          </div>
-          <div class="modal-links">
-            <a href="https://github.com/AnOkolie/news-scrapper" target="_blank" rel="noopener noreferrer" class="github-link" aria-label="Repo Link">
-              <span class="fa-brands fa-github fa-flip"></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Studly -->
-    <div class="portfolio-box" id="frontend-dev">
-      <img src="images/Portfolio.jpeg" alt="" />
-
-      <div class="portfolio-layer">
-        <h4>Studly</h4>
-        <p>Gamified Study Habit Tracker</p>
-        <div class="tech-stack" >
-        <span>React |</span>
-        <span>Node.js |</span>
-        <span>PostgreSQL |</span>
-        <span>Postman |</span>
-        <span>Vitest</span>
-      </div>
-        <a href="#studly-modal" class="btn">View Details</a>
-      </div>
-
-      <div id="studly-modal" class="modal">
-        <div class="modal-content">
-          <a href="#portfolio" class="close">&times;</a>
-
-          <h2>Studly Application</h2>
-
-          <h4>Key Highlights</h4>
-          <ul>
-            <li>Gamified habit tracking with badges and streaks</li>
-            <li>Social features for shared progress and study meetups</li>
-            <li>Agile development across multiple sprints</li>
-            <li>Frontend-focused contribution</li>
-            <li>Dockerized frontend and backend</li>
-          </ul>
-
-          <div class="modal-links">
-            <a href="https://github.com/HaMeD1379/Studly" target="_blank" rel="noopener noreferrer" class="github-link" aria-label="Repo Link">
-              <span class="fa-brands fa-github fa-flip"></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Trade Microservice -->
-    <div class="portfolio-box" id="frontend-dev">
-      <img src="images/Portfolio.jpeg" alt="" />
-
-      <div class="portfolio-layer">
-        <h4>Trade Execution Microservice</h4>
-        <p>A real-world trade trade execution workflow simulator</p>
-        <div class="tech-stack">
-          <span>Java |</span>
-          <span>SpringBoot |</span>
-          <span>PostgreSQL</span>
-        </div>
-        <a href="#trade-modal" class="btn">View Details</a>
-      </div>
-
-      <div id="trade-modal" class="modal">
-        <div class="modal-content">
-          <a href="#portfolio" class="close">&times;</a>
-
-          <h2>Studly Application</h2>
-
-          <h4>Key Highlights</h4>
-          <ul>
-            <li>Process trade requests with validation and concurrency</li>
-            <li>Relational schema and optimized queries to improve performance</li>
-          </ul>
-
-          <div class="modal-links">
-            <a href="https://github.com/AnOkolie/TradeExecutionMicroservice" target="_blank" rel="noopener noreferrer" class="github-link" aria-label="Repo Link">
-              <span class="fa-brands fa-github fa-flip"></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    
+    <a href="projects.html" class="btn">
+      View Projects →
+    </a>
+  </div>
 </section>
+    
 
    <section class="contact" id="contact">
   <h2 class="heading">Let's Work Together</h2>
